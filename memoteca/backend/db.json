@@ -1,0 +1,34 @@
+{
+  "pensamentos": [
+    {
+      "conteudo": "Cadastrar um novo componente",
+      "autoria": "ng g c <nome-do-componente>",
+      "modelo": "modelo2",
+      "id": 2
+    },
+    {
+      "conteudo": "Iniciar o projeto",
+      "autoria": "ng serve",
+      "modelo": "modelo1",
+      "id": 3
+    },
+    {
+      "conteudo": "routes",
+      "autoria": "Quando adicionar no html o <main>   <router-outlet></router-outlet> </main>, adicionar const routes: Routes = [   {     path: '', // Quando a rota é vazia     redirectTo: 'listar', // Redireciona para a rota 'listarPensamento'     pathMatch: 'full' // A rota precisa ser exatamente vazia para o redirecionamento acontecer   },   {     path: 'listar', // Quando a rota é 'listar'     component: ListarComponent // Renderiza o componente ListarPensamentoComponent   } ];",
+      "modelo": "modelo1",
+      "id": 4
+    },
+    {
+      "conteudo": "Auto import",
+      "autoria": "Para agilizar o desenvolvimento, você pode instalar uma extensão do Visual Studio Code que realiza importação automática.  Para isso, com o VS Code aberto, clique em extensões, pesquise por Auto Import e depois clique em Install. Pronto!  Print da tela do Visual Studio Code mostrando a extensão Auto Import  Essa extensão vai localizar, analisar e fornecer ações e autocomplete de código automaticamente para todas as importações disponíveis.",
+      "modelo": "modelo2",
+      "id": 5
+    },
+    {
+      "conteudo": "Configurando backend",
+      "autoria": "Criando backend da minha aplicação  1 - criar pasta backend no projeto \t1.1 - Caso esteja executando o projeto, clicar no prompt crtl + c para parar  2 - acessar por prompt o backend  \tcd backend  3 - Dentro da pasta digitaremos o comando para criar o arquivo package.json. \tnpm init -y  4 -  Também instalaremos o JSON Server. \tnpm i json-server  5 - Cria agora um novo File  6 - dentro dela coloca um script de teste: exemplo: {     \"financas\": [         {             \"id\": 1,             \"Data\": \"2023-11-11T12:30:00Z\",             \"Valor\": \"23,45\",             \"Parcelas\": \"2\",             \"nome\": \"Teste\"         },         {             \"id\": 2,             \"Data\": \"2023-11-11T12:30:00Z\",             \"Valor\": \"23,45\",             \"Parcelas\": \"2\",             \"nome\": \"Teste\"         },         {             \"id\": 3,             \"Data\": \"2023-11-11T12:30:00Z\",             \"Valor\": \"23,45\",             \"Parcelas\": \"2\",             \"nome\": \"Teste\"         }     ] }  7 - Acessaremos em seguida o package.json. Na seção \"scripts\": {} temos o código abaixo:           \t\"test\": \"echo \\\"Error: no test specified\\\" && exit 1\"  \t\"start\": \"json-server --watch db.json --port 3000\"  Dessa forma, configuramos o JSON Server para consultar o arquivo db.json e executar a API na porta 3000. Como teste, vamos executar um comando no terminal, ainda dentro da pasta backend \t \tnpm start  agora só testar usando http://localhost:3000/",
+      "modelo": "modelo3",
+      "id": 6
+    }
+  ]
+}
